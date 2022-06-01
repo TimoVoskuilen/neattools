@@ -12,5 +12,3 @@ replacevalue <- function(data, column1, firstvalue, replacement){
   data[column1][data[column1] == firstvalue] <- replacement
   data
 }
-
-
