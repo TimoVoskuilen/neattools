@@ -1,0 +1,56 @@
+---
+title: "neattools-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{neattools-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, message = FALSE}
+library(neattools)
+library(tidyverse)
+```
+
+## Neattools is a package created to prove Timo Voskuilen's ability to create packages. 
+
+The package contrians 4 functions that make manipulating a dataframe in R easier.
+
+Here I will give a demonstration to what the functions in this package do:
+
+```{r, message = FALSE}
+#load the made up data from a drug screening experiment.
+data("layout")
+```
+
+The function __flip__ flips the columns and rows from a dataframe:
+```{r, message = FALSE}
+head(mtcars, n = 2)
+flip(head(mtcars, n = 2))
+```
+
+the function __ removecolumn__ lets you remove a specific column from a dataframe
+```{r, message = FALSE}
+head(layout, n = 2)
+removecolumn(head(layout, n =2), "Drug")
+```
+
+the function __subset__ lets you subset specific rows from a  dataframe
+```{r, message = FALSE}
+head(layout, n = 2)
+subset(head(layout, n = 2), 1)
+```
+
+the function __replacevalue__ lets you replace a specific value in a dataframe
+```{r, message = FALSE}
+head(layout, n = 5)
+replacevalue(head(layout, n = 5), "Drug", "Analyfyn", "Test")
+```
+

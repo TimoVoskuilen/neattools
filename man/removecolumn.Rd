@@ -8,6 +8,8 @@ removecolumn(data, what)
 }
 \arguments{
 \item{data}{A dataframe}
+
+\item{what}{what column to remove from a dataframe}
 }
 \value{
 a dataframe with a deleted column

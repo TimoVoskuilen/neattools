@@ -8,6 +8,12 @@ replacevalue(data, column1, firstvalue, replacement)
 }
 \arguments{
 \item{data}{A dataframe}
+
+\item{column1}{in what column do u want to replace a value}
+
+\item{firstvalue}{what value do u want to replace}
+
+\item{replacement}{what do u want to replace this value with}
 }
 \value{
 a dataframe where the values of a specific column have been replaced by the user defined value

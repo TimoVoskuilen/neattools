@@ -8,6 +8,8 @@ subset(data, what)
 }
 \arguments{
 \item{data}{A dataframe}
+
+\item{what}{what row do u want to subset}
 }
 \value{
 a subsetted dataframe based on what row u want to subset

@@ -5,7 +5,7 @@
 #' @format A data frame with 384 rows and 10 variables:
 #' \describe{
 #'   \item{WellId}{Well identifier}
-#'   \item{WellAdress}{Well Adress}
+#'   \item{WellAddress}{Well Adress}
 #'   \item{Column}{Column}
 #'   \item{Row}{Row}
 #'   \item{Drug}{Drug used for screening}
