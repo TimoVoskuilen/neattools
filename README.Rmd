@@ -1,0 +1,65 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Neattools
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of neattools is to make certain data frame manipulations easier.
+
+## Installation
+
+You can install the development version of neattools from [GitHub](https://github.com/) with:
+
+``` {r}
+# install.packages("devtools")
+#devtools::install_github("timovoskuilen/neattools")
+```
+
+## Functions
+
+This package includes 4 functions, which will all be shown including examples below.
+
+__Flip__: flips the columns and rows from a dataframe
+
+```{r example}
+library(neattools)
+head(mtcars, n = 2)
+flip(head(mtcars, n = 2))
+```
+
+__removecolumn__: removes a specific column from a dataframe
+```{r}
+library(tidyverse)
+layout
+removecolumn(layout, "Drug")
+
+```
+
+__subset__: lets you subset specific rows from a data frame
+```{r, out.height="60%", out.width="60%"}
+subset(layout, 6)
+```
+
+__replacevalue__: lets you replace a specific value in a dataframe with a user defined value
+```{r, out.height="60%", out.width="60%"}
+layout
+replacevalue(layout, 'Drug', "Analyfyn", "test")
+```
+
+## Credits
+
+Functions were written by Timo Voskuilen
