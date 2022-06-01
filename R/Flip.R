@@ -6,6 +6,7 @@
 #' @export
 #'
 #' @examples
+#' flip(layout)
 
 flip <- function(data){
   data2 <- t(data)

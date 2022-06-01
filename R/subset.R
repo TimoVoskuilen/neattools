@@ -2,10 +2,11 @@
 #'
 #' @param data A dataframe
 #'
-#' @return a subsetted dataframe based on what you want to subset
+#' @return a subsetted dataframe based on what row u want to subset
 #' @export
 #'
 #' @examples
+#' subset(layout, 8)
 
 subset <- function(data, what){
 
@@ -15,4 +16,3 @@ subset <- function(data, what){
 }
 
 
-subset(mtcars, "mpg")

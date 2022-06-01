@@ -2,14 +2,15 @@
 #'
 #' @param data A dataframe
 #'
-#' @return a dataframe with a deleted column
+#' @return a dataframe where the values of a specific column have been replaced by the user defined value
 #' @export
 #'
 #' @examples
-#'
+#' replacevalue(layout, 'Drug', "Analyfyn", "test")
 
-replacevalue <- function(data, column1, data1, value){
-  data2 <- data[data$column1 %in% data1, "value"] <- value
-  data2
+replacevalue <- function(data, column1, firstvalue, replacement){
+  data[column1][data[column1] == firstvalue] <- replacement
+  data
 }
-replacevalue(mtcars, c("cyl"), 6, c("test"))
+
+

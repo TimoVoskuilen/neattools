@@ -13,4 +13,3 @@ removecolumn <- function(data, what){
   data2
 }
 
-
