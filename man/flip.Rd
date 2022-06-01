@@ -15,3 +15,6 @@ a flipped dataframe
 \description{
 FLip the columns and row of a dataframe
 }
+\examples{
+flip(layout)
+}

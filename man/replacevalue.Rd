@@ -4,17 +4,17 @@
 \alias{replacevalue}
 \title{replace in a value in a column based on something in another column}
 \usage{
-replacevalue(data, column1, data1, value)
+replacevalue(data, column1, firstvalue, replacement)
 }
 \arguments{
 \item{data}{A dataframe}
 }
 \value{
-a dataframe with a deleted column
+a dataframe where the values of a specific column have been replaced by the user defined value
 }
 \description{
 replace in a value in a column based on something in another column
 }
 \examples{
-
+replacevalue(layout, 'Drug', "Analyfyn", "test")
 }

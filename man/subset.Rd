@@ -10,8 +10,11 @@ subset(data, what)
 \item{data}{A dataframe}
 }
 \value{
-a subsetted dataframe based on what you want to subset
+a subsetted dataframe based on what row u want to subset
 }
 \description{
 subset a dataframe
+}
+\examples{
+subset(layout, 8)
 }

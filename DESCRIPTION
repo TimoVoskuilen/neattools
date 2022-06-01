@@ -3,12 +3,17 @@ Title: explore and rework dataframes
 Version: 0.0.0.9000
 Authors@R: 
     person("Timo", "Voskuilen", , "-@example.com", role = c("aut", "cre"),)
-Description: this package gives the option to flip a dataframe, organize data and automatically make a tibble from a dataframe.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: this package gives the option to flip a dataframe, organize data and replace a specific value in a dataframe with a user defined one
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
+Imports:
+    tidyverse
 Depends: 
     R (>= 2.10)
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
